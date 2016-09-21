@@ -10,14 +10,12 @@ function autoload($className)
         $fileName  = str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
     }
 	$DS = DIRECTORY_SEPARATOR;
-	//var_dump( str_replace('_', $DS , $className) . '.class.php');
     $fileName .=  str_replace('_', $DS , $className) . '.class.php';
- 	var_dump($fileName);
     require_once $fileName;
 }
 
 set_include_path(implode(PATH_SEPARATOR, array(get_include_path(), './controller', './model', './view')));
-//spl_autoload_register();
+
 
 spl_autoload_register('autoload');
 
