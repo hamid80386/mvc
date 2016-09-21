@@ -53,7 +53,7 @@ route.php give parsed array and recognize what controller must call,
 when appropriate controller called, that connecting to fit model and when data prepare, calling appropriate view and passing information (data that process after give from model) to that,
 view load applicable template(s) and finally present information in HTML format.  
 
-
+//
 notice: You may need refer to the difference between URL & URI, for this read RFC 1630, RFC 2396, RFC 1738.
 ////////////////////////////////////////
 
