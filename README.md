@@ -1,7 +1,7 @@
-# mvc
-/////////////////////////
-//Fast learning for MVC//
-/////////////////////////
+# php mvc
+/////////////////////////////////
+//Fast learning for MVC for PHP//
+/////////////////////////////////
 
 Managing project's files in a web programming is very nerve-racking,
 if you have already completed a big project with a lot of request, Certainly understand about that process of managing them are confused...
