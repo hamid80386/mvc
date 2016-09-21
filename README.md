@@ -1,5 +1,7 @@
 # mvc
-Fast learning for MVC
+/////////////////////////
+//Fast learning for MVC//
+/////////////////////////
 
 Managing project's files in a web programming is very nerve-racking,
 if you have already completed a big project with a lot of request, Certainly understand about that process of managing them are confused...
@@ -7,6 +9,10 @@ MVC is a fast solution for give a clear managing for requested.
 MVC is simple, But requires a lot of practice.
 
 In this small course we start about thinking MVC. tracking is fast, but you need to understand every duty before and know about every file task in following.
+
+/////////////////
+// Terminology //
+/////////////////
 
 for start we need explain some word that many use in mvc programming,
 
@@ -23,6 +29,33 @@ template dont have any calculate. a view may call multiple template or subview f
 5. Controller = is an interface between model and view layer
 6. Router = is a determiner for how handle url request or any type of request and pass appropriate command to a controller.
 7. autoload = this is not part of mvc, but we use of php spl_autoload_register function for don't include classes in any file that use.
+
+////////////////////////////////////////
+
+///////////////
+// WORK FLOW //
+///////////////
+
+when your enter an url in address bar, that send to index.php
+we change normal attribute of url for remove index.php from url bt .htaccess setting file.
+this mean 
+www.example.com/intex.php
+is equal by 
+www.example.com
+
+and you should now any uri that you point in address bar, will be send to index.php, for example in:
+www.example.com/category/books
+/category/books
+will be send to index.php and will be access from $_SERVER['REQUEST_URI']
+We parse $_SERVER['REQUEST_URI'] by explode function by slash (/) character.
+then send parsed array to route.php
+route.php give parsed array and recognize what controller must call,
+when appropriate controller called, that connecting to fit model and when data prepare, calling appropriate view and passing information (data that process after give from model) to that,
+view load applicable template(s) and finally present information in HTML format.  
+
+
+notice: You may need refer to the difference between URL & URI, for this read RFC 1630, RFC 2396, RFC 1738.
+////////////////////////////////////////
 
 You can change this learning project and share your exprience with this repository ;)
 
